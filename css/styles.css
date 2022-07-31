@@ -1,31 +1,32 @@
-body{
-    margin:0;
-    background-color: #858585;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+body {
+  margin: 0;
+  background-color: #858585;
+  font-family: "Merriweather", serif;
 }
 
-h1{
-    width:auto;
-    margin: auto;
+h1 {
+  width: auto;
+  margin: auto;
+  font-family: "Sacramento", cursive;
+  font-size: 300%;
 }
 
-.subheading{
-    width: auto;
-    margin: auto;
+.subheading {
+  width: auto;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
 }
-.top-container{
-    background-image: url("images/jump.gif");
-    background-size: cover ;
-    background-color: #858585;
-    text-align: center;
-    padding-bottom: 36%;
-    padding-top: 10%;
-}
-
-.middle-container{
-
+.top-container {
+  background-image: url("images/jump.gif");
+  background-size: cover;
+  background-color: #858585;
+  text-align: center;
+  padding-bottom: 36%;
+  padding-top: 10%;
 }
 
-.bottom-container{
+.middle-container {
+}
 
+.bottom-container {
 }
