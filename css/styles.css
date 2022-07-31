@@ -1,18 +1,28 @@
-body {
-  background-color: #eaf6f6;
+body{
+    margin:0;
 }
 
-hr {
-  border-color: grey;
-  border-style: dotted none none;
-  border-width: 7px;
-  width: 5%;
+h1{
+    width:20%;
+    margin: auto;
+}
+.subheading{
+    width: 20%;
+    margin: auto;
+}
+.top-container{
+    background-image: url("images/jump.gif");
+    background-size: cover ;
+    background-color: #6E85B7;
+    text-align: center;
+    padding-bottom: 36%;
+    padding-top: 10%;
 }
 
-h1 {
-  color: #508383;
+.middle-container{
+
 }
 
-h3 {
-  color: #66bfbf;
+.bottom-container{
+
 }
