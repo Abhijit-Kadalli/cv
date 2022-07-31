@@ -1,5 +1,6 @@
 body{
     margin:0;
+    background-color: #858585;
 }
 
 h1{
@@ -14,7 +15,7 @@ h1{
 .top-container{
     background-image: url("images/jump.gif");
     background-size: cover ;
-    background-color: #6E85B7;
+    background-color: #858585;
     text-align: center;
     padding-bottom: 36%;
     padding-top: 10%;
