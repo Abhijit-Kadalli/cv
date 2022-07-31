@@ -3,11 +3,12 @@ body{
 }
 
 h1{
-    width:20%;
+    width:auto;
     margin: auto;
 }
+
 .subheading{
-    width: 20%;
+    width: auto;
     margin: auto;
 }
 .top-container{
