@@ -8,7 +8,7 @@ h1 {
   width: auto;
   margin: auto;
   font-family: "Sacramento", cursive;
-  font-size: 300%;
+  font-size: 500%;
 }
 
 .subheading {
@@ -29,5 +29,17 @@ h1 {
   text-align: center;
 }
 
+.profile{
+  font-size: larger;
+  padding-bottom: 12%;
+  padding-top: 10%;
+}
+
+.skills{
+  font-size: larger;
+  padding-top: 12%;
+}
+
 .bottom-container {
+  text-align: center;
 }
