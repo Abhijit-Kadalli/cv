@@ -11,18 +11,27 @@ h1 {
   font-size: 500%;
 }
 
+hr{
+  border-color: rgb(231, 230, 230);
+  border-style: dotted none none;
+  border-width: 7px;
+  width: 5%;
+}
+
 .subheading {
   width: auto;
   margin: auto;
+  font-weight: normal;
   font-family: "Montserrat", sans-serif;
 }
+
 .top-container {
   background-image: url("images/jump.gif");
   background-size: cover;
   background-color: #858585;
   text-align: center;
   padding-bottom: 36%;
-  padding-top: 10%;
+  padding-top: 10%; 
 }
 
 .middle-container {
@@ -31,12 +40,33 @@ h1 {
 
 .profile{
   font-size: larger;
-  padding-bottom: 12%;
+  width: 50%;
+  margin: 100px auto 100px auto ;
+  line-height: 2.2;
+  text-align: left;
+}
+
+.profileimg{
+  width:40%;
 }
 
 .skills{
+  padding-top: 5%;
+  padding-bottom: 5%;
   font-size: larger;
-  padding-bottom: 12%;
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2.2;
+}
+
+.blinkimg{
+  width : 25%;
+  padding-right: 10%;
+  float: left;
 }
 
 .bottom-container {
