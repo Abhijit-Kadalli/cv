@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  background-color: #858585;
+  background-color: #499E77;
   font-family: "Merriweather", serif;
+  color:#DDDB92;
 }
 
 h1 {
@@ -70,15 +71,15 @@ hr{
 
 .contact-me{
   text-align: center;
-  background-color: #333333;
-  color: #858585;
+  background-color: #93E9BE;
+  color: #2C5E1A;
   margin-bottom: 0%;
 }
 
 .bottom-container {
   text-align: center;
-  background-color: #333333;
-  color: #858585;
+  background-color: #93E9BE;
+  color: #2C5E1A;
   margin: 0%;
 }
 
@@ -99,5 +100,5 @@ a:active {
 }
 
 a{
-  color: aliceblue;
+  color:#2C5E1A;
 }
