@@ -69,6 +69,12 @@ hr {
   float: left;
 }
 
+.running {
+  width: 25%;
+  padding-left: 10%;
+  float: right;
+}
+
 .contact-me {
   text-align: center;
   background-color: #93e9be;
