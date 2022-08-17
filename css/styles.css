@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  background-color: #499E77;
+  background-color: #499e77;
   font-family: "Merriweather", serif;
-  color:#DDDB92;
+  color: #08313a;
 }
 
 h1 {
@@ -12,7 +12,7 @@ h1 {
   font-size: 400%;
 }
 
-hr{
+hr {
   border-color: rgb(231, 230, 230);
   border-style: dotted none none;
   border-width: 7px;
@@ -31,55 +31,55 @@ hr{
   background-color: #858585;
   text-align: center;
   padding-bottom: 36%;
-  padding-top: 10%; 
+  padding-top: 10%;
 }
 
 .middle-container {
   text-align: center;
 }
 
-.profile{
+.profile {
   font-size: larger;
   width: 50%;
-  margin: 100px auto 100px auto ;
+  margin: 100px auto 100px auto;
   line-height: 2.2;
   text-align: left;
 }
 
-.profileimg{
-  width:40%;
+.profileimg {
+  width: 40%;
 }
 
-.skills{
+.skills {
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: larger;
 }
 
-.skill-row{
+.skill-row {
   width: 50%;
   margin: 100px auto 100px auto;
   text-align: left;
   line-height: 2.2;
 }
 
-.blinkimg{
-  width : 25%;
+.blinkimg {
+  width: 25%;
   padding-right: 10%;
   float: left;
 }
 
-.contact-me{
+.contact-me {
   text-align: center;
-  background-color: #93E9BE;
-  color: #2C5E1A;
+  background-color: #93e9be;
+  color: #2c5e1a;
   margin-bottom: 0%;
 }
 
 .bottom-container {
   text-align: center;
-  background-color: #93E9BE;
-  color: #2C5E1A;
+  background-color: #93e9be;
+  color: #2c5e1a;
   margin: 0%;
 }
 
@@ -99,6 +99,6 @@ a:active {
   text-decoration: underline;
 }
 
-a{
-  color:#2C5E1A;
+a {
+  color: #2c5e1a;
 }
