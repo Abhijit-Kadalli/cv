@@ -72,12 +72,14 @@ hr{
   text-align: center;
   background-color: #333333;
   color: #858585;
+  margin-bottom: 0%;
 }
 
 .bottom-container {
   text-align: center;
   background-color: #333333;
   color: #858585;
+  margin: 0%;
 }
 
 a:link {
