@@ -28,7 +28,7 @@ hr {
 .top-container {
   background-image: url("images/jump.gif");
   background-size: cover;
-  background-color: #858585;
+  background-color: #E5D9B6;
   text-align: center;
   padding-bottom: 36%;
   padding-top: 10%;
@@ -84,7 +84,7 @@ hr {
 
 .bottom-container {
   text-align: center;
-  background-color: #93e9be;
+  background-color: #F3EFE0;
   color: #2c5e1a;
   margin: 0%;
 }
