@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #499e77;
+  background-color: #9BA17B;
   font-family: "Merriweather", serif;
   color: #08313a;
 }
@@ -28,7 +28,7 @@ hr {
 .top-container {
   background-image: url("images/jump.gif");
   background-size: cover;
-  background-color: #858585;
+  background-color: #E5D9B6;
   text-align: center;
   padding-bottom: 36%;
   padding-top: 10%;
@@ -84,7 +84,7 @@ hr {
 
 .bottom-container {
   text-align: center;
-  background-color: #93e9be;
+  background-color: #61764B;
   color: #2c5e1a;
   margin: 0%;
 }
