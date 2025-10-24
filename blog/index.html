@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — Abhijit Kadalli</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="canonical" href="https://abhijit-kadalli.github.io/cv/blog/" />
+    <meta name="description" content="Blog by Abhijit Kadalli on EEG, multimodal systems, and ML engineering." />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html" class="brand">Abhijit Kadalli</a>
+        <ul class="nav-list">
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#experience">Experience</a></li>
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="./index.html">Blog</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1>Blog</h1>
+        <p>Notes on EEG signal processing, multimodal synchronization, and interpretable ML.</p>
+        <div class="cards">
+          <article class="card">
+            <header class="card-header">
+              <h3><a href="posts/telescope-vs-constellation.html">The Telescope and the Constellation Map — Why Generalists Matter</a></h3>
+              <div class="meta">October 2025</div>
+            </header>
+            <p>On specialists vs generalists, base-rate fallacy and PPV, and a personal story from SNN-on-hardware work.</p>
+            <a class="card-hit" href="posts/telescope-vs-constellation.html" aria-label="Read: The Telescope and the Constellation Map"></a>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3><a href="posts/real-time-eeg-lsl.html">Designing Real‑Time EEG Pipelines with LSL</a></h3>
+              <div class="meta">October 2025</div>
+            </header>
+            <p>Stream alignment, artifact rejection, and low‑latency feature extraction with Lab Streaming Layer.</p>
+            <a class="card-hit" href="posts/real-time-eeg-lsl.html" aria-label="Read: Designing Real‑Time EEG Pipelines with LSL"></a>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> Abhijit Kadalli</span>
+        <span class="footer-links">
+          <a href="../index.html">Home</a>
+          <a href="./index.html">Blog</a>
+          <a href="../index.html#contact">Contact</a>
+        </span>
+      </div>
+      <script>
+        (function(){
+          var el = document.getElementById('year');
+          if (el) { el.textContent = new Date().getFullYear(); }
+        })();
+      </script>
+    </footer>
+  </body>
+  
+</html>
+
