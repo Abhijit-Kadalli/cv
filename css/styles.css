@@ -79,6 +79,16 @@ img { max-width: 100%; height: auto; display: block; }
   .skills-grid { grid-template-columns: 1fr; }
 }
 
+/* Laptop/desktop readability tweaks */
+@media (min-width: 1024px) {
+  body { font-size: 18px; }
+  .section p { font-size: 17px; line-height: 1.85; }
+  .hero-title { font-size: 44px; }
+  .hero-subtitle { font-size: 18px; }
+  .blog-post .post-raw { font-size: 19px; line-height: 1.95; }
+  .blog-post h1 { font-size: 38px; }
+}
+
 /* Make the Blog section container clickable */
 .blog-section { position: relative; }
 .blog-section .section-hit { position: absolute; inset: 0; display: block; border-radius: 8px; }
