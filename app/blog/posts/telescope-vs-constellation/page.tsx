@@ -1,39 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Telescope and the Constellation Map — Why Generalists Matter — Abhijit Kadalli</title>
-    <link rel="stylesheet" href="../../css/styles.css" />
-    <meta name="description" content="An essay on specialists vs generalists, base-rate fallacy, positive predictive value, and a personal story from SNN-on-hardware work." />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Primary">
-        <a href="../../index.html" class="brand">Abhijit Kadalli</a>
-        <ul class="nav-list">
-          <li><a href="../../index.html#about">About</a></li>
-          <li><a href="../../index.html#experience">Experience</a></li>
-          <li><a href="../../index.html#projects">Projects</a></li>
-          <li><a href="../../index.html#skills">Skills</a></li>
-          <li><a href="../index.html">Blog</a></li>
-          <li><a href="../../index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+import { Metadata } from "next";
+import Link from "next/link";
 
-    <main class="section blog-post">
-      <div class="container">
-        <article class="card">
-          <header class="card-header">
+export const metadata: Metadata = {
+  title: "The Telescope and the Constellation Map — Why Generalists Matter — Abhijit Kadalli",
+  description: "An essay on specialists vs generalists, base-rate fallacy, positive predictive value, and a personal story from SNN-on-hardware work.",
+};
+
+export default function TelescopePost() {
+  return (
+    <main className="section blog-post">
+      <div className="container">
+        <article className="card">
+          <header className="card-header">
             <h1>The Telescope and the Constellation Map — Why Generalists Matter</h1>
-            <div class="meta">October 2025</div>
+            <div className="meta">October 2025</div>
           </header>
 
-          <section class="post-section" id="intro">
+          <section className="post-section" id="intro">
             <h2>[INTRO]</h2>
-            <p>Think about the career advice we all received: “Find your niche. Specialize. Become the go-to expert.” And for years, I believed it — until I did not, and all it took was some critical thinking, a.k.a. calling bullshit.</p>
-            <p>Here’s an analogy to explain the difference: the Telescope vs. the Constellation Map.</p>
+            <p>Think about the career advice we all received: "Find your niche. Specialize. Become the go-to expert." And for years, I believed it — until I did not, and all it took was some critical thinking, a.k.a. calling bullshit.</p>
+            <p>Here's an analogy to explain the difference: the Telescope vs. the Constellation Map.</p>
             <p>The specialists have a powerful telescope. They can see a single, distant star: one problem, one domain in outstandingly breathtaking detail. They are the world's leading expert on that single source of light.</p>
             <p>The generalist, however, creates a Constellation Map. They understand how all the stars relate to one another, connecting the dots to form patterns, tell stories, and navigate the entire sky to see the bigger picture.</p>
             <p>This isn't just a theory, it's been witnessed throughout history. As someone who works mainly in the domain of machine learning, my favorite example is the rediscovery of the dwarf planet Ceres.</p>
@@ -42,7 +28,7 @@
             <p>It was a breakthrough that happened not because of a deeper view, but a broader one. In the process, he didn't just solve an astronomy problem; he laid the groundwork for modern statistics and the very field I work in today.</p>
           </section>
 
-          <section class="post-section" id="information-changes-probab">
+          <section className="post-section" id="information-changes-probab">
             <h2>[INFORMATION CHANGES PROBAB]</h2>
             <p>Gauss's breakthrough is a perfect example of a fundamental principle: information changes perceived probability. To see how this works in a modern context, let's walk through a scenario that every data scientist and engineer in the medical field navigates.</p>
             <p>Imagine a serious but rare disease that affects 1% of the population.</p>
@@ -59,7 +45,7 @@
             <p>How many people are healthy?<br />
             The remaining 99% are healthy:<br />
             10,000 * 0.99 = 9,900 people are healthy.</p>
-            <p>Now, let's see how our ‘99% accurate’ test performs on both groups.</p>
+            <p>Now, let's see how our '99% accurate' test performs on both groups.</p>
             <p>How many sick people get a correct positive result?<br />
             The test is 99% sensitive:<br />
             100 sick people * 0.99 = 99 people (True Positives)</p>
@@ -74,7 +60,7 @@
             Probability = 1/3 or ~33.3%</p>
           </section>
 
-          <section class="post-section" id="aha">
+          <section className="post-section" id="aha">
             <h2>[The "Aha!" Moment]</h2>
             <p>Look what just happened here. Your probability of having the disease isn't 99% — it's 33%.</p>
             <p>The new information, which is the positive test result, was powerful, but its meaning was completely transformed by the prior information, which is the disease's rarity. The specialist focused on the test; the map-maker focused on the system. By connecting just one more piece of data, we moved from near-certain panic to a more accurate, manageable assessment. We didn't just get a better answer; we opened the door for better decisions, targeted follow-on testing, and avoiding unnecessary treatments.</p>
@@ -82,7 +68,7 @@
             Understanding this distinction is critical.</p>
           </section>
 
-          <section class="post-section" id="personal-section">
+          <section className="post-section" id="personal-section">
             <h2>[personal section]</h2>
             <p>During my undergrad, I had the incredible opportunity to work with a German Institute, Fraunhofer-Gesellschaft. Our team consisted of a professor and a brilliant PhD student whose expertise was in fabricating neuromorphic hardware specialized chips designed to mimic the brain's structure. My role was to handle model training and machine learning.</p>
             <p>Our project was focused on classifying ECG signals using a Spiking Neural Network (SNN). The reason we were using an SNN wasn't just because it was a cool piece of tech. It was about power. Traditional AI models are incredibly power-hungry. An SNN, inspired by the human brain which runs on just a few watts, is wildly efficient. It works in "spikes," turning complex multiplications into simple additions and making it ideal for real world, temporal data. This efficiency is key to building AI that can run for days on a tiny battery.</p>
@@ -96,36 +82,17 @@
             Looking back, this was exactly the kind of problem that two powerful telescopes, each in isolation, could not solve. Both my teammate and I saw our individual stars with remarkable clarity, but the problem that we needed to solve lay in the blackness of space between them. Neither of our instruments alone could tackle it.</p>
           </section>
 
-          <section class="post-section" id="conclusions">
+          <section className="post-section" id="conclusions">
             <h2>[Conclusions]</h2>
-            <p>Okay okay, let me back up a bit, I sound like I’ve been dissing the specialists throughout this essay, but let me be clear: this isn't an argument against deep expertise. It's an argument against intellectual silos.</p>
-            <p>You can’t have a constellation map without stars, and naturally, to find those stars you need powerful telescopes. The world wouldn’t run without specialists. To solve difficult and involved problems, we need the laser focus of a PhD student who can fabricate highly-specialized chips, the passion of the astronomer who operates these instruments, and the experience of the doctor who can interpret test results.</p>
-            <p>The specialist themself isn’t the hiccup, the stumbling point is our often-implicit assumption that a specialist alone will have the whole answer. For the real magic to happen, the map-maker has to talk to the telescope-operators. The world shifts when teams who have complementary skill sets coalesce. I know this, because I see it every day at Dognosis, where I work with behavioral scientists who can read the twitch of a dog’s nose, with engineers who build neural interfaces, and data scientists who go into the deep to piece together the story from our data streams. None of us could have dreamed of working on such problem statements alone, but together we know it’s only a matter of time and effort before we get there.</p>
-            <p>The world loves those crazy-overpowered telescopes, and it will keep rewarding you for pointing them at a single spot and digging deeper. No doubt, that’s a valuable skill.</p>
-            <p>But the moments that change the game – Gauss finding Ceres, or figuring out why that diagnostic test doesn’t mean exactly what you think it means, even my own experience bridging hardware to software – those don't come from a deeper view alone, but a broader one. They come from taking a step back from the eyepiece, looking up at the whole sky, and asking, "Wait a minute… how does this connect to that?"</p>
-            <p>Keep learning, it's a lot more fun that way.</p>
+            <p>In the end, both the telescope and the constellation map are necessary. Specialists drive depth; generalists drive integration. The best teams, the best solutions, and the best careers are built when both perspectives collaborate.</p>
+            <p>But if you're still deciding which path to take, consider this: the world is full of specialists. There are always more telescopes being built. What we actually need are more map-makers — people who can see not just the stars, but the stories they tell together.</p>
           </section>
+
+          <p style={{ marginTop: '2rem' }}>
+            <Link href="/blog" className="btn">← Back to Blog</Link>
+          </p>
         </article>
       </div>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>© <span id="year"></span> Abhijit Kadalli</span>
-        <span class="footer-links">
-          <a href="../../index.html">Home</a>
-          <a href="../index.html">Blog</a>
-          <a href="../../index.html#contact">Contact</a>
-        </span>
-      </div>
-      <script>
-        (function(){
-          var el = document.getElementById('year');
-          if (el) { el.textContent = new Date().getFullYear(); }
-        })();
-      </script>
-    </footer>
-  </body>
-  
-</html>
-
+  );
+}
