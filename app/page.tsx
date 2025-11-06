@@ -1,4 +1,5 @@
 import Image from "next/image";
+import profilePic from "@/public/images/profilepic.png";
 import Link from "next/link";
 import Card, { CardHeader, CardMeta, CardTags } from "@/components/Card";
 
@@ -22,7 +23,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-media">
-              <Image src="/images/profilepic.png" alt="Portrait of Abhijit Kadalli" width={400} height={400} priority />
+              <Image src={profilePic} alt="Portrait of Abhijit Kadalli" width={400} height={400} priority />
             </div>
           </div>
         </div>

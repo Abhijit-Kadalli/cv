@@ -28,16 +28,16 @@ export const metadata: Metadata = {
     description: "Researcher in Data and Computational Neuroscience. EEG, multimodal pipelines, real-time systems, and ML projects.",
     type: "website",
     url: "https://abhijit-kadalli.github.io/cv/",
-    images: ["/cv/images/profilepic.png"],
+    images: ["/images/profilepic.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Abhijit Kadalli — Portfolio",
     description: "EEG, multimodal synchronization, real-time systems, ML.",
-    images: ["/cv/images/profilepic.png"],
+    images: ["/images/profilepic.png"],
   },
   icons: {
-    icon: "/cv/running.gif",
+    icon: "/running.gif",
   },
 };
 
