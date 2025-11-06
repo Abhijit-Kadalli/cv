@@ -2,6 +2,7 @@ import Image from "next/image";
 import profilePic from "@/public/images/profilepic.png";
 import Link from "next/link";
 import Card, { CardHeader, CardMeta, CardTags } from "@/components/Card";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
@@ -30,24 +31,27 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="section">
-        <div className="container">
-          <h2>About</h2>
-          <p>
-            I work at the intersection of neuroscience and machine learning. Recently, I have
-            built real-time EEG processing and visualization tools, synchronized data across EEG,
-            olfactory and vision streams using LSL, and explored interpretable models including
-            LSTM and Bayesian networks to explain behavior. I also work on signal processing, machine learning projects and
-            love applied mathematics. Currently, Learning more about Reiminnian Geometry and its applications.
-          </p>
-        </div>
-      </section>
+      <ScrollReveal>
+        <section id="about" className="section">
+          <div className="container">
+            <h2>About</h2>
+            <p>
+              I work at the intersection of neuroscience and machine learning. Recently, I have
+              built real-time EEG processing and visualization tools, synchronized data across EEG,
+              olfactory and vision streams using LSL, and explored interpretable models including
+              LSTM to explain behavior. I also work on signal processing, machine learning projects and
+              love applied mathematics. Currently, Learning more about Reiminnian Geometry and its applications.
+            </p>
+          </div>
+        </section>
+      </ScrollReveal>
 
       {/* Experience Section */}
-      <section id="experience" className="section">
-        <div className="container">
-          <h2>Experience</h2>
-          <div className="cards">
+      <ScrollReveal delay={100}>
+        <section id="experience" className="section">
+          <div className="container">
+            <h2>Experience</h2>
+            <div className="cards">
             <Card>
               <CardHeader>
                 <h3>Researcher, Data and Computational Neuroscience</h3>
@@ -108,13 +112,15 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section>
+        </section>
+      </ScrollReveal>
 
       {/* Projects Section */}
-      <section id="projects" className="section">
-        <div className="container">
-          <h2>Projects</h2>
-          <div className="cards">
+      <ScrollReveal delay={100}>
+        <section id="projects" className="section">
+          <div className="container">
+            <h2>Projects</h2>
+            <div className="cards">
             <Card>
               <CardHeader>
                 <h3>Auto Rapper</h3>
@@ -172,13 +178,15 @@ export default function Home() {
             </Card>
           </div>
         </div>
-      </section>
+        </section>
+      </ScrollReveal>
 
       {/* Skills Section */}
-      <section id="skills" className="section">
-        <div className="container">
-          <h2>Skills</h2>
-          <div className="skills-grid">
+      <ScrollReveal delay={100}>
+        <section id="skills" className="section">
+          <div className="container">
+            <h2>Skills</h2>
+            <div className="skills-grid">
             <div>
               <h3>Languages</h3>
               <p>Python, C/C++, Rust(Learning), Typescript, JavaScript, HTML/CSS, GDscript, C# (Unity)</p>
@@ -189,30 +197,35 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </ScrollReveal>
 
       {/* Blog Section */}
-      <section id="blog" className="section">
-        <div className="container blog-section">
-          <h2>Blog</h2>
-          <p><Link href="/blog" className="btn">Visit the blog</Link></p>
-          <Link href="/blog" className="section-hit" aria-label="Open blog" />
-        </div>
-      </section>
+      <ScrollReveal delay={100}>
+        <section id="blog" className="section">
+          <div className="container blog-section">
+            <h2>Blog</h2>
+            <p><Link href="/blog" className="btn">Visit the blog</Link></p>
+            <Link href="/blog" className="section-hit" aria-label="Open blog" />
+          </div>
+        </section>
+      </ScrollReveal>
 
       {/* Contact Section */}
-      <section id="contact" className="section">
-        <div className="container">
-          <h2>Contact</h2>
-          <p>Open to collaboration and research-driven projects.</p>
-          <ul className="contact-list">
-            <li><a href="mailto:abhijitkadalli14@gmail.com">abhijitkadalli14@gmail.com</a></li>
-            <li><a href="https://www.linkedin.com/in/abhijitkadalli/">LinkedIn</a></li>
-            <li><a href="https://github.com/Abhijit-Kadalli">GitHub</a></li>
-            <li><a href="https://twitter.com/kadalli_">Twitter</a></li>
-          </ul>
-        </div>
-      </section>
+      <ScrollReveal delay={100}>
+        <section id="contact" className="section">
+          <div className="container">
+            <h2>Contact</h2>
+            <p>Open to collaboration and research-driven projects.</p>
+            <ul className="contact-list">
+              <li><a href="mailto:abhijitkadalli14@gmail.com">abhijitkadalli14@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com/in/abhijitkadalli/">LinkedIn</a></li>
+              <li><a href="https://github.com/Abhijit-Kadalli">GitHub</a></li>
+              <li><a href="https://twitter.com/kadalli_">Twitter</a></li>
+            </ul>
+          </div>
+        </section>
+      </ScrollReveal>
     </main>
   );
 }
