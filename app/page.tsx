@@ -1,6 +1,3 @@
-import Image from "next/image";
-import profilePic from "@/public/images/profilepic.png";
-import Link from "next/link";
 import Card, { CardHeader, CardMeta, CardTags } from "@/components/Card";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -10,21 +7,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero" aria-label="Intro">
         <div className="container">
-          <div className="hero-grid">
-            <div className="hero-text">
-              <h1 className="hero-title">Abhijit Kadalli</h1>
-              <p className="hero-subtitle">Researcher — Data and Computational Neuroscience</p>
-              <p className="hero-summary">
-                I design real-time EEG/signal processing pipelines, synchronize multimodal data streams, and build interpretable ML systems for behavior understanding.
-              </p>
-              <div className="cta">
-                <a href="mailto:abhijitkadalli14@gmail.com" className="btn primary">Email</a>
-                <a href="https://github.com/Abhijit-Kadalli" className="btn" rel="me">GitHub</a>
-                <a href="https://linkedin.com/in/abhijitkadalli/" className="btn" rel="me">LinkedIn</a>
-              </div>
-            </div>
-            <div className="hero-media">
-              <Image src={profilePic} alt="Portrait of Abhijit Kadalli" width={400} height={400} priority />
+          <div className="hero-text">
+            <h1 className="hero-title">Abhijit Kadalli</h1>
+            <p className="hero-subtitle">Researcher — Data and Computational Neuroscience</p>
+            <p className="hero-summary">
+              I design real-time EEG/signal processing pipelines, synchronize multimodal data streams, and build interpretable ML systems for behavior understanding.
+            </p>
+            <div className="cta">
+              <a href="mailto:abhijitkadalli14@gmail.com" className="btn primary">Email</a>
+              <a href="https://github.com/Abhijit-Kadalli" className="btn" rel="me">GitHub</a>
+              <a href="https://linkedin.com/in/abhijitkadalli/" className="btn" rel="me">LinkedIn</a>
             </div>
           </div>
         </div>
@@ -197,17 +189,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        </section>
-      </ScrollReveal>
-
-      {/* Blog Section */}
-      <ScrollReveal delay={100}>
-        <section id="blog" className="section">
-          <div className="container blog-section">
-            <h2>Blog</h2>
-            <p><Link href="/blog" className="btn">Visit the blog</Link></p>
-            <Link href="/blog" className="section-hit" aria-label="Open blog" />
-          </div>
         </section>
       </ScrollReveal>
 

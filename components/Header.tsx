@@ -18,7 +18,6 @@ export default function Header() {
             <li><Link href="/#experience" onClick={() => setMobileMenuOpen(false)}>Experience</Link></li>
             <li><Link href="/#projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link></li>
             <li><Link href="/#skills" onClick={() => setMobileMenuOpen(false)}>Skills</Link></li>
-            <li><Link href="/blog" onClick={() => setMobileMenuOpen(false)}>Blog</Link></li>
             <li><Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link></li>
           </ul>
 

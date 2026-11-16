@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Merriweather } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -8,14 +8,6 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-montserrat",
-  display: "swap",
-});
-
-const merriweather = Merriweather({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["italic"],
-  variable: "--font-merriweather",
   display: "swap",
 });
 
@@ -28,13 +20,11 @@ export const metadata: Metadata = {
     description: "Researcher in Data and Computational Neuroscience. EEG, multimodal pipelines, real-time systems, and ML projects.",
     type: "website",
     url: "https://abhijit-kadalli.github.io/cv/",
-    images: ["/images/profilepic.png"],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Abhijit Kadalli — Portfolio",
     description: "EEG, multimodal synchronization, real-time systems, ML.",
-    images: ["/images/profilepic.png"],
   },
   icons: {
     icon: "/running.gif",
@@ -78,7 +68,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${montserrat.variable} ${merriweather.variable}`}>
+      <body className={`${montserrat.variable}`}>
         <Header />
         {children}
         <Footer />

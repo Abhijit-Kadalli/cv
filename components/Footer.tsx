@@ -16,7 +16,6 @@ export default function Footer() {
         <span>© {year} Abhijit Kadalli</span>
         <div className="footer-links">
           <Link href="/">Website</Link>
-          <Link href="/blog">Blog</Link>
           <Link href="/#contact">Contact</Link>
         </div>
       </div>
